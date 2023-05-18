@@ -1,6 +1,5 @@
 package kpi.fict.chaban.sequential;
 
-
 public class SeqMergeSorter {
 
     public void mergeSort(int[] array) {

@@ -2,6 +2,7 @@ package kpi.fict.chaban.parallel;
 
 import lombok.AllArgsConstructor;
 
+import java.util.Arrays;
 import java.util.concurrent.RecursiveAction;
 
 @AllArgsConstructor

@@ -1,23 +1,20 @@
 package kpi.fict.chaban.tools;
 
-
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 
-import java.util.Arrays;
-
 @Getter
 @Setter
 @RequiredArgsConstructor
-public class ArrayGenerator {
+public class ArrayTools {
     private final int size;
     private int[] array;
 
     public int[] generate() {
         array = new int[size];
         for (int i = 0; i < size; i++) {
-            array[i] = (int)(Math.random() * 100);
+            array[i] = (int) (Math.random() * 100);
         }
         return array;
     }
@@ -28,5 +25,12 @@ public class ArrayGenerator {
                 return false;
         }
         return true;
+    }
+
+    public static void printArray(int[] array) {
+        for (int j : array) {
+            System.out.printf("%d ", j);
+        }
+        System.out.println();
     }
 }
